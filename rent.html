@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <title>My Next House</title>
+  </head>
+  <body class="bg-light">
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-light" >
+            <a class="navbar-brand" href="index.html">
+              <img src="./images/mnh_logo.png" width="100" height="100" alt="My Next House Logo">
+            </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" style="color: #1B4F72;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="blog.html" style="color: #1B4F72;">Blog <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="team.html" style="color: #1B4F72;">Team <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html" style="color: #1B4F72;">Contact <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="invest.html" style="color: #1B4F72;">Invest <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="pitch.html" style="color: #1B4F72;">Pitch <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html" style="color: #1B4F72;"><span class="fas fa-user" style="color: #1B4F72;"></span> Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" style="color: #1B4F72;"><span class="fas fa-sign-in-alt" style="color: #1B4F72;"></span> Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div class="jumbotron">
+
+            <!-- Search title  -->
+            <div class="row justify-content-center">
+            <h1 class="my-auto">Search</h1>
+            </div>
+            <hr/>
+
+
+            <!-- Term of stay selection  -->
+            <div class="row justify-content-center">
+              <div class="col-md-4 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary">
+                    <input id="short-term" type="checkbox" checked autocomplete="off">Short Term <hr class="my-1"/>(Less than 1 month)
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Mid Term <hr class="my-1"/>(Between 1 month and 1 year)
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="long-term" type="checkbox" checked autocomplete="off">Long Term <hr class="my-1"/>(More than 1 year)
+                  </label>
+                </div>
+              </div>
+            </div>
+            <hr/>
+
+            <!-- Location selection  -->
+            <div class="row justify-content-center">
+              <div class="col-md-3 col-sm-12 text-center my-2">
+                <select class="custom-select">
+                  <option selected>Location by area</option>
+                  <option value="all">Kyoto City (All 11 wards)</option>
+                  <option value="Fushimi">Fushimi-ku</option>
+                  <option value="Higashiyama">Higashiyama-ku</option>
+                  <option value="Kamigyoku">Kamigyoku-ku</option>
+                  <option value="Kita">Kita-ku</option>
+                  <option value="Minami">Minami-ku</option>
+                  <option value="Nakagyo">Nakagyo-ku</option>
+                  <option value="Nakagyo">Nishikyo-ku</option>
+                  <option value="Sakyo">Sakyo-ku</option>
+                  <option value="Shimogyo">Shimogyo-ku</option>
+                  <option value="Ukyo">Ukyo-ku</option>
+                  <option value="Yamashina">Yamashina-ku</option>
+                  <option value="">--- Outside of Kyoto City ---</option>
+
+                  <option value="Ayabe">Ayabe</option>
+                  <option value="Fukuchiyama">Fukuchiyama</option>
+                  <option value="Joyo">Joyo</option>
+                  <option value="Kameoka">Kameoka</option>
+                  <option value="Kizugawa">Kizugawa</option>
+                  <option value="Kyotanabe">Kyotanabe</option>
+                  <option value="Kyotango">Kyotango</option>
+                  <option value="Maizuru">Maizuru</option>
+                  <option value="Miyazu">Miyazu</option>
+                  <option value="Muko">Muko</option>
+                  <option value="Nagaokakyo">Nagaokakyo</option>
+                  <option value="Nantan">Nantan</option>
+                  <option value="Uji">Uji</option>
+                  <option value="Yawata">Yawata</option>
+                </select>
+              </div>
+              <div class="col-1 text-center my-auto p-0"">
+                <span>or</span>
+              </div>
+
+              <div class="col-md-3 col-sm-12 text-center my-2">
+                <select class="custom-select">
+                  <option selected>Location by School</option>
+                  <option value="all">All Schools</option>
+                  <option value="1">Kyoto University - Yoshida Campus</option>
+                  <option value="2">Kyoto University - Uji Campus</option>
+                  <option value="3">Kyoto University - Katsura Campus</option>
+                  <option value="4">Doshisha University</option>
+                  <option value="5">Ritsumeikan University</option>
+                  <option value="6">Kyoto Institute of Technology</option>
+                  <option value="7">Ryukoku University</option>
+                  <option value="8">Kyoto Sangyo University</option>
+                  <option value="9">Kyoto Prefectural University of Medicine</option>
+                  <option value="10">Kyoto University of Education</option>
+                  <option value="11">Kyoto Women's University</option>
+                  <option value="12">Kyoto Prefectural University</option>
+                  <option value="13">Kyoto Pharmaceutical University</option>
+                  <option value="14">Bukkyo University</option>
+                  <option value="15">Kyoto City University of Arts</option>
+                  <option value="16">Kyoto Seika University</option>
+                  <option value="17">Kyoto Koka Women's College</option>
+                  <option value="18">Kyoto University of Art and Design</option>
+                  <option value="19">Kyoto University of Foreign Studies</option>
+                  <option value="20">Kyoto Bunkyo University</option>
+                  <option value="21">Meiji University of Oriental Medicine</option>
+                  <option value="22">Doshisha Women's College of Liberal Arts</option>
+                  <option value="23">Otani University</option>
+                  <option value="24">Hanazono University</option>
+                  <option value="25">Kyoto Tachibana Women's University</option>
+                  <option value="26">Kyoto Saga University of Arts</option>
+                  <option value="27">Ikenobo College</option>
+                  <option value="28">Kyoto College of Graduate Studies for Informatics</option>
+                  <option value="29">Shuchiin University</option>
+                  <option value="30">Seibo Jogakuin Junior College</option>
+                  <option value="31">Kyoto College of Medical Science</option>
+                  <option value="32">Kacho Junior College</option>
+                  <option value="33">Kyoto Kacho University</option>
+                  <option value="34">Kyoto Seizan College</option>
+                  <option value="35">Kyoto International University</option>
+                </select>
+              </div>
+              <div class="col-1 text-center my-auto p-0"">
+                <span>or</span>
+              </div>
+              <div class="col-md-3 col-sm-12 text-center my-2">
+                <select class="custom-select">
+                  <option selected>Location by Train Line</option>
+                  <option value="all">All Lines</option>
+                  <option value="Tozai">Tozai</option>
+                  <option value="Keihan">Keihan</option>
+                  <option value="Hankyu">Hankyu</option>
+                  <option value="Karasuma">Karasuma</option>
+                  <option value="Kintetsu">Kintetsu</option>
+                  <option value="Eizan">Eizan</option>
+                  <option value="JR Nara-sen">JR Nara-sen</option>
+                  <option value="JR Sagano-sen">JR Sagano-sen</option>
+                  <option value="JR Kyoto-sen">JR Kyoto-sen</option>
+                  <option value="JR Biwako-sen">JR Biwako-sen</option>
+                  <option value="JR Kosei-sen">JR Kosei-sen</option>
+
+                </select>
+              </div>
+            </div>
+            <hr/>
+
+            <!-- Min/max rent/size/layout selection  -->
+            <div class="row justify-content-center">
+              <div class="col-md-2 col-sm-6 text-center my-2 pr-md-1">
+                <select class="custom-select">
+                  <option selected>Min rent</option>
+        					<option value="20000">20,000</option>
+        					<option value="30000">30,000</option>
+        					<option value="40000">40,000</option>
+        					<option value="50000">50,000</option>
+        					<option value="60000">60,000</option>
+        					<option value="70000">70,000</option>
+        					<option value="80000">80,000</option>
+        					<option value="90000">90,000</option>
+        					<option value="100000">100,000</option>
+        					<option value="110000">110,000</option>
+        					<option value="120000">120,000</option>
+        					<option value="130000">130,000</option>
+        					<option value="140000">140,000</option>
+        					<option value="150000">150,000</option>
+        					<option value="160000">160,000</option>
+        					<option value="170000">170,000</option>
+        					<option value="180000">180,000</option>
+        					<option value="190000">190,000</option>
+        					<option value="200000">200,000</option>
+        					<option value="300000">300,000</option>
+        					<option value="400000">400,000</option>
+        					<option value="500000">500,000</option>
+        					<option value="600000">600,000</option>
+        					<option value="700000">700,000</option>
+        					<option value="800000">800,000</option>
+        					<option value="900000">900,000</option>
+        					<option value="1000000">1,000,000</option>
+        					<option value="1200000">1,200,000</option>
+        					<option value="1400000">1,400,000</option>
+        					<option value="1600000">1,600,000</option>
+        					<option value="1800000">1,800,000</option>
+        					<option value="2000000">2,000,000</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-6 text-center my-2  pl-md-1">
+                <select class="custom-select">
+                  <option selected>Max rent</option>
+        					<option value="20000">20,000</option>
+        					<option value="30000">30,000</option>
+        					<option value="40000">40,000</option>
+        					<option value="50000">50,000</option>
+        					<option value="60000">60,000</option>
+        					<option value="70000">70,000</option>
+        					<option value="80000">80,000</option>
+        					<option value="90000">90,000</option>
+        					<option value="100000">100,000</option>
+        					<option value="110000">110,000</option>
+        					<option value="120000">120,000</option>
+        					<option value="130000">130,000</option>
+        					<option value="140000">140,000</option>
+        					<option value="150000">150,000</option>
+        					<option value="160000">160,000</option>
+        					<option value="170000">170,000</option>
+        					<option value="180000">180,000</option>
+        					<option value="190000">190,000</option>
+        					<option value="200000">200,000</option>
+        					<option value="300000">300,000</option>
+        					<option value="400000">400,000</option>
+        					<option value="500000">500,000</option>
+        					<option value="600000">600,000</option>
+        					<option value="700000">700,000</option>
+        					<option value="800000">800,000</option>
+        					<option value="900000">900,000</option>
+        					<option value="1000000">1,000,000</option>
+        					<option value="1200000">1,200,000</option>
+        					<option value="1400000">1,400,000</option>
+        					<option value="1600000">1,600,000</option>
+        					<option value="1800000">1,800,000</option>
+        					<option value="2000000">2,000,000</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-6 text-center my-2  pr-md-1">
+                <select class="custom-select">
+                  <option selected>Min size (m2)</option>
+        					<option value="20">20</option>
+        					<option value="25">25</option>
+        					<option value="30">30</option>
+        					<option value="35">35</option>
+        					<option value="40">40</option>
+        					<option value="50">50</option>
+        					<option value="60">60</option>
+        					<option value="70">70</option>
+        					<option value="80">80</option>
+        					<option value="90">90</option>
+        					<option value="100">100</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-6 text-center my-2 pl-md-1">
+                <select class="custom-select">
+                  <option selected>Max size (m2)</option>
+        					<option value="20">20</option>
+        					<option value="25">25</option>
+        					<option value="30">30</option>
+        					<option value="35">35</option>
+        					<option value="40">40</option>
+        					<option value="50">50</option>
+        					<option value="60">60</option>
+        					<option value="70">70</option>
+        					<option value="80">80</option>
+        					<option value="90">90</option>
+        					<option value="100">100</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-6 text-center my-2  pr-md-1">
+                <select class="custom-select">
+                  <option selected>Min layout</option>
+                  <option value="1R">1R</option>
+                  <option value="1K">1K</option>
+                  <option value="1SK">1SK</option>
+                  <option value="1DK">1DK</option>
+                  <option value="1SLK">1SLK</option>
+                  <option value="1SDK">1SDK</option>
+                  <option value="1LDK">1LDK</option>
+                  <option value="1SLDK">1SLDK</option>
+                  <option value="2K">2K</option>
+                  <option value="2SK">2SK</option>
+                  <option value="2DK">2DK</option>
+                  <option value="2SLK">2SLK</option>
+                  <option value="2SDK">2SDK</option>
+                  <option value="2LDK">2LDK</option>
+                  <option value="2SLDK">2SLDK</option>
+                  <option value="3K">3K</option>
+                  <option value="3SK">3SK</option>
+                  <option value="3DK">3DK</option>
+                  <option value="3SLK">3SLK</option>
+                  <option value="3SDK">3SDK</option>
+                  <option value="3LDK">3LDK</option>
+                  <option value="3SLDK">3SLDK</option>
+                  <option value="4K">4K</option>
+                  <option value="4SK">4SK</option>
+                  <option value="4DK">4DK</option>
+                  <option value="4SLK">4SLK</option>
+                  <option value="4SDK">4SDK</option>
+                  <option value="4LDK">4LDK</option>
+                  <option value="4SLDK">4SLDK</option>
+                  <option value="5K">5K</option>
+                  <option value="5SK">">5SK</option>
+                  <option value="5DK">5DK</option>
+                  <option value="5SLK">5SLK</option>
+                  <option value="5SDK">5SDK</option>
+                  <option value="5LDK">5LDK</option>
+                  <option value="5SLDK">5SLDK</option>
+                  <option value="6K">6K</option>
+                  <option value="6SK">6SK</option>
+                  <option value="6DK">6DK</option>
+                  <option value="6SLK">6SLK</option>
+                  <option value="6SDK">6SDK</option>
+                  <option value="6LDK">6LDK</option>
+                  <option value="6SLDK">6SLDK</option>
+                  <option value="7K">7K</option>
+                  <option value="7SK">7SK</option>
+                  <option value="7DK">7DK</option>
+                  <option value="7SLK">7SLK</option>
+                  <option value="7SDK">7SDK</option>
+                  <option value="7LDK">7LDK</option>
+                  <option value="7SLDK">7SLDK</option>
+                  <option value="8K">8K</option>
+                  <option value="8SK">8SK</option>
+                  <option value="8DK">8DK</option>
+                  <option value="8SLK">8SLK</option>
+                  <option value="8SDK">8SDK</option>
+                  <option value="8LDK">8LDK</option>
+                  <option value="8SLDK">8SLDK</option>
+                  <option value="9K">9K</option>
+                  <option value="9SK">9SK</option>
+                  <option value="9DK">9DK</option>
+                  <option value="9SLK">9SLK</option>
+                  <option value="9SDK">9SDK</option>
+                  <option value="9LDK">9LDK</option>
+                  <option value="9SLDK">9SLDK</option>
+                  <option value="10K">10K</option>
+                  <option value="10SK">10SK</option>
+                  <option value="10DK">10DK</option>
+                  <option value="10SLK">10SLK</option>
+                  <option value="10SDK">10SDK</option>
+                  <option value="10LDK">10LDK</option>
+                  <option value="10SLDK">10SLDK</option>
+                  <option value="Office">Office</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-sm-6 text-center my-2  pl-md-1">
+                <select class="custom-select">
+                  <option selected>Max layout</option>
+                  <option value="1R">1R</option>
+                  <option value="1K">1K</option>
+                  <option value="1SK">1SK</option>
+                  <option value="1DK">1DK</option>
+                  <option value="1SLK">1SLK</option>
+                  <option value="1SDK">1SDK</option>
+                  <option value="1LDK">1LDK</option>
+                  <option value="1SLDK">1SLDK</option>
+                  <option value="2K">2K</option>
+                  <option value="2SK">2SK</option>
+                  <option value="2DK">2DK</option>
+                  <option value="2SLK">2SLK</option>
+                  <option value="2SDK">2SDK</option>
+                  <option value="2LDK">2LDK</option>
+                  <option value="2SLDK">2SLDK</option>
+                  <option value="3K">3K</option>
+                  <option value="3SK">3SK</option>
+                  <option value="3DK">3DK</option>
+                  <option value="3SLK">3SLK</option>
+                  <option value="3SDK">3SDK</option>
+                  <option value="3LDK">3LDK</option>
+                  <option value="3SLDK">3SLDK</option>
+                  <option value="4K">4K</option>
+                  <option value="4SK">4SK</option>
+                  <option value="4DK">4DK</option>
+                  <option value="4SLK">4SLK</option>
+                  <option value="4SDK">4SDK</option>
+                  <option value="4LDK">4LDK</option>
+                  <option value="4SLDK">4SLDK</option>
+                  <option value="5K">5K</option>
+                  <option value="5SK">">5SK</option>
+                  <option value="5DK">5DK</option>
+                  <option value="5SLK">5SLK</option>
+                  <option value="5SDK">5SDK</option>
+                  <option value="5LDK">5LDK</option>
+                  <option value="5SLDK">5SLDK</option>
+                  <option value="6K">6K</option>
+                  <option value="6SK">6SK</option>
+                  <option value="6DK">6DK</option>
+                  <option value="6SLK">6SLK</option>
+                  <option value="6SDK">6SDK</option>
+                  <option value="6LDK">6LDK</option>
+                  <option value="6SLDK">6SLDK</option>
+                  <option value="7K">7K</option>
+                  <option value="7SK">7SK</option>
+                  <option value="7DK">7DK</option>
+                  <option value="7SLK">7SLK</option>
+                  <option value="7SDK">7SDK</option>
+                  <option value="7LDK">7LDK</option>
+                  <option value="7SLDK">7SLDK</option>
+                  <option value="8K">8K</option>
+                  <option value="8SK">8SK</option>
+                  <option value="8DK">8DK</option>
+                  <option value="8SLK">8SLK</option>
+                  <option value="8SDK">8SDK</option>
+                  <option value="8LDK">8LDK</option>
+                  <option value="8SLDK">8SLDK</option>
+                  <option value="9K">9K</option>
+                  <option value="9SK">9SK</option>
+                  <option value="9DK">9DK</option>
+                  <option value="9SLK">9SLK</option>
+                  <option value="9SDK">9SDK</option>
+                  <option value="9LDK">9LDK</option>
+                  <option value="9SLDK">9SLDK</option>
+                  <option value="10K">10K</option>
+                  <option value="10SK">10SK</option>
+                  <option value="10DK">10DK</option>
+                  <option value="10SLK">10SLK</option>
+                  <option value="10SDK">10SDK</option>
+                  <option value="10LDK">10LDK</option>
+                  <option value="10SLDK">10SLDK</option>
+                  <option value="Office">Office</option>
+                </select>
+              </div>
+            </div>
+            <hr/>
+
+            <!-- Max age of the building and available before selection  -->
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-sm-6 text-center my-2">
+                <select class="custom-select">
+                  <option selected>Max age of the building</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="50">50</option>
+                  <option value="60">60</option>
+                  <option value="70">70</option>
+                  <option value="80">80</option>
+                  <option value="90">90</option>
+                  <option value="100">100</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-sm-6 text-center my-2">
+                <div class="form-group row">
+                  <label for="example-date-input" class="col-md-4 col-sm-12 col-form-label">Available before:</label>
+                  <div class="col-md-8 col-sm-12">
+                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr/>
+
+            <!-- Amenities  -->
+            <div class="row justify-content-center">
+            <h5 class="my-auto">Amenities</h5>
+            </div>
+            <hr/>
+
+            <div class="row justify-content-center">
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary">
+                    <input id="short-term" type="checkbox" checked autocomplete="off">AC
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary">
+                    <input id="short-term" type="checkbox" checked autocomplete="off">Flooring
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary">
+                    <input id="short-term" type="checkbox" checked autocomplete="off">Balcony
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Washing machine
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Pet OK
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Free Internet
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Furnished
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Security camera
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Elevator
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Bicycle parking
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Car parking
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Facing south
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Walk-in closet
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-outline-primary ">
+                    <input id="mid-term" type="checkbox" checked autocomplete="off">Sound-proof walls
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="btn-group-toggle data-toggle="buttons">
+                      <label class="btn btn-outline-primary ">
+                        <input id="mid-term" type="checkbox" checked autocomplete="off">Sound-proof walls
+                      </label>
+                    </div>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
