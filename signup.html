@@ -15,8 +15,8 @@
   </head>
   <body class="bg-light">
     <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg navbar-light" >
-            <a class="navbar-brand" href="index.html">
+      <nav class="navbar navbar-expand-lg ">
+            <a id='logo'class="navbar-brand" href="index.html">
               <img src="./images/mnh_logo.png" width="100" height="100" alt="My Next House Logo">
             </a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,30 +27,78 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html" style="color: #1B4F72;">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="blog.html" style="color: #1B4F72;">Blog <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="team.html" style="color: #1B4F72;">Team <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="team.html" >Team <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="contact.html" style="color: #1B4F72;">Contact <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="contact.html" >Contact <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="invest.html" style="color: #1B4F72;">Invest <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="pitch.html" >Pitch <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="pitch.html" style="color: #1B4F72;">Pitch <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="profile_rentout.html" >Profile <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="signup.html" style="color: #1B4F72;"><span class="fas fa-user" style="color: #1B4F72;"></span> Sign Up</a>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fas fa-user" style="color: #1560bd;"></span> Sign Up</a>
+              <div class="dropdown-menu dropdown-menu-right text-center"  style="min-width: 20rem;"width="200px">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="signup-email">Email address</label>
+                    <input type="email" class="form-control" id="signup-email" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" class="form-control" id="signup-password" placeholder="Password">
+                  </div>
+                  <div class="form-check mb-3 text-center">
+                    <input type="checkbox" class="form-check-input" id="signup-rememberme">
+                    <label class="form-check-label" for="signup-rememberme">
+                      Remember me
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                  </div>
+                </form>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html" style="color: #1B4F72;"><span class="fas fa-sign-in-alt" style="color: #1B4F72;"></span> Login</a>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fas fa-sign-in-alt" style="color: #1560bd;"></span> Login</a>
+              <div class="dropdown-menu dropdown-menu-right text-center"  style="min-width: 20rem;"width="200px">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="login-email">Email address</label>
+                    <input type="email" class="form-control" id="login-email" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" class="form-control" id="login-password" placeholder="Password">
+                  </div>
+                  <div class="form-check mb-3 text-center">
+                    <input type="checkbox" class="form-check-input" id="login-rememberme">
+                    <label class="form-check-label" for="login-rememberme">
+                      Remember me
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Forgot password?</a>
+              </div>
             </li>
           </ul>
         </div>

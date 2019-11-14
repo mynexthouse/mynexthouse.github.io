@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="styles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <title>Team</title>
   </head>
   <body class="bg-light">
     <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg navbar-light" >
-            <a class="navbar-brand" href="index.html">
+      <nav class="navbar navbar-expand-lg ">
+            <a id='logo'class="navbar-brand" href="index.html">
               <img src="./images/mnh_logo.png" width="100" height="100" alt="My Next House Logo">
             </a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,132 +28,167 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html" style="color: #1B4F72;">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="blog.html" style="color: #1B4F72;">Blog <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="team.html" style="color: #1B4F72;">Team <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="team.html" >Team <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="contact.html" style="color: #1B4F72;">Contact <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="contact.html" >Contact <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="invest.html" style="color: #1B4F72;">Invest <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="pitch.html" >Pitch <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="pitch.html" style="color: #1B4F72;">Pitch <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="profile_rentout.html" >Profile <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="signup.html" style="color: #1B4F72;"><span class="fas fa-user" style="color: #1B4F72;"></span> Sign Up</a>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fas fa-user" style="color: #1560bd;"></span> Sign Up</a>
+              <div class="dropdown-menu dropdown-menu-right text-center"  style="min-width: 20rem;"width="200px">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="signup-email">Email address</label>
+                    <input type="email" class="form-control" id="signup-email" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" class="form-control" id="signup-password" placeholder="Password">
+                  </div>
+                  <div class="form-check mb-3 text-center">
+                    <input type="checkbox" class="form-check-input" id="signup-rememberme">
+                    <label class="form-check-label" for="signup-rememberme">
+                      Remember me
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                  </div>
+                </form>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html" style="color: #1B4F72;"><span class="fas fa-sign-in-alt" style="color: #1B4F72;"></span> Login</a>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fas fa-sign-in-alt" style="color: #1560bd;"></span> Login</a>
+              <div class="dropdown-menu dropdown-menu-right text-center"  style="min-width: 20rem;"width="200px">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="login-email">Email address</label>
+                    <input type="email" class="form-control" id="login-email" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" class="form-control" id="login-password" placeholder="Password">
+                  </div>
+                  <div class="form-check mb-3 text-center">
+                    <input type="checkbox" class="form-check-input" id="login-rememberme">
+                    <label class="form-check-label" for="login-rememberme">
+                      Remember me
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Forgot password?</a>
+              </div>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="row mx-1">
-        <div class="col mb-3">
-          <h1 class="display-5 text-center border-bottom-3px pb-1">The Team</h1>
-        </div>
-      </div>
-      <div class="row mx-1 mb-5">
-        <div class="col-md col-sm-12 mt-2">
-          <div class="card">
-            <img src="./images/danyel.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Danyel Koca</h5>
-              <p class="card-text mb-1">Intelligent Transport Sytems Laboratory</p>
-              <p class="card-text">Kyoto University</p>
-              <div class="row no-gutters">
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">FB</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">TW</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">LIN</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">GIT</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md col-sm-12 mt-2">
-          <div class="card">
-            <img src="./images/ziad.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Ziad Abdelhalim</h5>
-              <p class="card-text mb-1">Urban and Regional Planning Laboratory</p>
-              <p class="card-text">Kyoto University</p>
-              <div class="row no-gutters">
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">FB</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">TW</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">LIN</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">GIT</a>
+
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-10 mt-1 mb-1 text-center">
+          <div class="jumbotron p-0 pt-3">
+          <h1>The Team</h1>
+          <hr />
+            <div class="row mx-1 mb-5">
+              <div class="col-md col-sm-12 mt-2">
+                <div class="card">
+                  <img src="./images/danyel.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-2">Danyel Koca</h5>
+                    <div style="min-height:3rem">
+                      <p class="card-text text-center">Intelligent Transport Sytems Laboratory</p>
+                    </div>
+                    <p class="card-text mb-3" >Kyoto University</p>
+                    <div class="row no-gutters">
+                      <div class="col text-center">
+                        <a href="https://www.facebook.com/danyelkoca" class="fa fa-facebook"></a>
+                      </div>
+                      <div class="col text-center">
+                        <a href="https://www.linkedin.com/in/danyelkoca/" class="fa fa-linkedin"></a>
+                      </div>
+                      <div class="col text-center">
+                        <a href="https://github.com/danyelkoca" class="fa fa-github"></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md col-sm-12 mt-2">
-          <div class="card">
-            <img src="./images/hikaru.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Hikaru Inoue</h5>
-              <p class="card-text mb-1">Faculty of Informatics</p>
-              <br/>
-              <p class="card-text ">Kansai University</p>
-              <div class="row no-gutters">
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">FB</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">TW</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">LIN</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">GIT</a>
+              <div class="col-md col-sm-12 mt-2">
+                <div class="card">
+                  <img src="./images/ziad.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-2">Ziad Abdelhalim</h5>
+                    <div style="min-height:3rem;">
+                      <p class="card-text text-center">Urban and Regional Planning Laboratory</p>
+                    </div>
+                    <p class="card-text mb-3" >Kyoto University</p>
+                    <div class="row no-gutters">
+                      <div class="col text-center">
+                        <a href="https://www.facebook.com/ziad.abdelhalim" class="fa fa-facebook"></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md col-sm-12 mt-2">
-          <div class="card">
-            <img src="./images/teru.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Inaba Terunobu</h5>
-              <p class="card-text mb-1">Department of Global Engineering</p>
-              <p class="card-text">Kyoto University</p>
-              <div class="row no-gutters">
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">FB</a>
+              <div class="col-md col-sm-12 mt-2">
+                <div class="card">
+                  <img src="./images/hikaru.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-2">Hikaru Inoue</h5>
+                      <div style="min-height:3rem;">
+                        <p class="card-text text-center">Faculty of Informatics</p>
+                      </div>
+                    <p class="card-text mb-3">Kansai University</p>
+                    <div class="row no-gutters">
+                      <div class="col text-center">
+                        <a href="https://www.facebook.com/hikaru.inoue.144" class="fa fa-facebook"></a>
+                      </div>
+                      <div class="col text-center">
+                        <a href="https://www.linkedin.com/in/hikaru-inoue-670772170/" class="fa fa-linkedin"></a>
+                      </div>
+                      <div class="col text-center">
+                        <a href="https://github.com/hikruschips" class="fa fa-github"></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">TW</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">LIN</a>
-                </div>
-                <div class="col text-center">
-                  <a href="#" class="btn btn-primary">GIT</a>
+              </div>
+              <div class="col-md col-sm-12 mt-2 mb-4">
+                <div class="card">
+                  <img src="./images/teru.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-2">Inaba Terunobu</h5>
+                    <div style="min-height:3rem;">
+                      <p class="card-text" >Department of Global Engineering</p>
+                    </div>
+                    <p class="card-text mb-3">Kyoto University</p>
+                    <div class="row no-gutters">
+                      <div class="col text-center">
+                        <a href="https://www.facebook.com/profile.php?id=100025753875890" class="fa fa-facebook"></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

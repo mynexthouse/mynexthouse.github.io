@@ -13,10 +13,10 @@
 
     <title>My Next House</title>
   </head>
-  <body class="bg-light">
+  <body>
     <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg navbar-light" >
-            <a class="navbar-brand" href="index.html">
+      <nav class="navbar navbar-expand-lg ">
+            <a id='logo'class="navbar-brand" href="index.html">
               <img src="./images/mnh_logo.png" width="100" height="100" alt="My Next House Logo">
             </a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,30 +27,78 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html" style="color: #1B4F72;">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="blog.html" style="color: #1B4F72;">Blog <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="team.html" style="color: #1B4F72;">Team <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="team.html" >Team <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="contact.html" style="color: #1B4F72;">Contact <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="contact.html" >Contact <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="invest.html" style="color: #1B4F72;">Invest <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="pitch.html" >Pitch <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="pitch.html" style="color: #1B4F72;">Pitch <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="profile_rentout.html" >Profile <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="signup.html" style="color: #1B4F72;"><span class="fas fa-user" style="color: #1B4F72;"></span> Sign Up</a>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fas fa-user" style="color: #1560bd;"></span> Sign Up</a>
+              <div class="dropdown-menu dropdown-menu-right text-center"  style="min-width: 20rem;"width="200px">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="signup-email">Email address</label>
+                    <input type="email" class="form-control" id="signup-email" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" class="form-control" id="signup-password" placeholder="Password">
+                  </div>
+                  <div class="form-check mb-3 text-center">
+                    <input type="checkbox" class="form-check-input" id="signup-rememberme">
+                    <label class="form-check-label" for="signup-rememberme">
+                      Remember me
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                  </div>
+                </form>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html" style="color: #1B4F72;"><span class="fas fa-sign-in-alt" style="color: #1B4F72;"></span> Login</a>
+
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fas fa-sign-in-alt" style="color: #1560bd;"></span> Login</a>
+              <div class="dropdown-menu dropdown-menu-right text-center"  style="min-width: 20rem;"width="200px">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="login-email">Email address</label>
+                    <input type="email" class="form-control" id="login-email" placeholder="email@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" class="form-control" id="login-password" placeholder="Password">
+                  </div>
+                  <div class="form-check mb-3 text-center">
+                    <input type="checkbox" class="form-check-input" id="login-rememberme">
+                    <label class="form-check-label" for="login-rememberme">
+                      Remember me
+                    </label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Forgot password?</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -61,7 +109,7 @@
 
             <!-- Search title  -->
             <div class="row justify-content-center">
-            <h1 class="my-auto">Search</h1>
+              <h1 class="my-auto">Search</h1>
             </div>
             <hr/>
 
@@ -69,22 +117,22 @@
             <!-- Term of stay selection  -->
             <div class="row justify-content-center">
               <div class="col-md-4 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary">
+                <div class="btn-group-toggle " data-toggle="buttons">
+                  <label class="btn btn-outline-primary w-100">
                     <input id="short-term" type="checkbox" checked autocomplete="off">Short Term <hr class="my-1"/>(Less than 1 month)
                   </label>
                 </div>
               </div>
               <div class="col-md-4 col-sm-4 text-center my-2">
                 <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                  <label class="btn btn-outline-primary w-100">
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Mid Term <hr class="my-1"/>(Between 1 month and 1 year)
                   </label>
                 </div>
               </div>
               <div class="col-md-4 col-sm-4 text-center my-2">
                 <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                  <label class="btn btn-outline-primary w-100">
                     <input id="long-term" type="checkbox" checked autocomplete="off">Long Term <hr class="my-1"/>(More than 1 year)
                   </label>
                 </div>
@@ -462,8 +510,8 @@
             <hr/>
 
             <!-- Max age of the building and available before selection  -->
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-sm-6 text-center my-2">
+            <div class="row justify-content-around">
+              <div class="col-md-4 col-sm-6 text-center m-0 p-1">
                 <select class="custom-select">
                   <option selected>Max age of the building</option>
                   <option value="5">5</option>
@@ -479,10 +527,10 @@
                   <option value="100">100</option>
                 </select>
               </div>
-              <div class="col-md-6 col-sm-6 text-center my-2">
-                <div class="form-group row">
-                  <label for="example-date-input" class="col-md-4 col-sm-12 col-form-label">Available before:</label>
-                  <div class="col-md-8 col-sm-12">
+              <div class="col-md-5 col-sm-6 text-center m-0 p-1">
+                <div class="form-group row no-gutters m-0">
+                  <label for="example-date-input" class="col-md-6 col-sm-12 col-form-label">Available before:</label>
+                  <div class="col-md-6 col-sm-12">
                     <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                   </div>
                 </div>
@@ -492,127 +540,157 @@
 
             <!-- Amenities  -->
             <div class="row justify-content-center">
-            <h5 class="my-auto">Amenities</h5>
+              <h5 class="my-auto">Amenities</h5>
             </div>
             <hr/>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center row-eq-height">
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="short-term" type="checkbox" checked autocomplete="off">AC
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="short-term" type="checkbox" checked autocomplete="off">Flooring
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="short-term" type="checkbox" checked autocomplete="off">Balcony
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Washing machine
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Pet OK
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Free Internet
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Furnished
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"  style="height:100%;"  data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Security camera
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Elevator
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Bicycle parking
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Car parking
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"  style="height:100%;"  data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Facing south
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"  style="height:100%;"  data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Walk-in closet
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                  <label class="btn btn-outline-primary ">
+                <div class="btn-group-toggle"  style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary" style="height:100%;" >
+                  <input id="mid-term" type="checkbox" checked autocomplete="off">Women only
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 text-center my-2">
+                <div class="btn-group-toggle"   style="height:100%;" data-toggle="buttons">
+                  <label class="btn w-100 btn-outline-primary"  style="height:100%;" >
                     <input id="mid-term" type="checkbox" checked autocomplete="off">Sound-proof walls
                   </label>
                 </div>
               </div>
               <div class="col-md-3 col-sm-4 text-center my-2">
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown button
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <div class="btn-group-toggle data-toggle="buttons">
-                      <label class="btn btn-outline-primary ">
-                        <input id="mid-term" type="checkbox" checked autocomplete="off">Sound-proof walls
-                      </label>
-                    </div>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <a class="btn dropdown-toggle w-100" style="height:100%;" data-toggle="dropdown" style="color: #1560bd;" role="button" aria-haspopup="true" aria-expanded="false">Others</a>
+                  <div class="dropdown-menu dropdown-menu-right text-center">
+                    <form class=" p-3">
+                      <div class="form-check text-center m-2">
+                        <input type="checkbox" class="form-check-input" id="1">
+                        <label class="form-check-label" for="1">
+                          Other Amenity 1
+                        </label>
+                      </div>
+                      <div class="form-check text-center m-2">
+                        <input type="checkbox" class="form-check-input" id="2">
+                        <label class="form-check-label" for="2">
+                          Other Amenity 2
+                        </label>
+                      </div>
+                      <div class="form-check text-center m-2">
+                        <input type="checkbox" class="form-check-input" id="3">
+                        <label class="form-check-label" for="3">
+                          Other Amenity 3
+                        </label>
+                      </div>
+                      <div class="form-check text-center m-2">
+                        <input type="checkbox" class="form-check-input" id="4">
+                        <label class="form-check-label" for="4">
+                          Other Amenity 4
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <hr/>
+              <div class="row justify-content-center">
+                <div class="col-md-6  col-sm-12 text-center my-2 pr-md-1">
+                  <div class="text-center w-100">
+                    <button type="submit" class="btn w-100">Search</button>
                   </div>
                 </div>
               </div>
             </div>
-            <hr/>
           </div>
         </div>
       </div>
