@@ -1,13 +1,11 @@
 /*  color:#1B4F72;
 
 */
-*{
-  border: 0px solid black;
-  font-family: "Geneva", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-}
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-.container-fluid {
-  background-color:white;
+*{
+  border: 0px solid black ;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -29,8 +27,12 @@ a, a:visited,a:hover{
 
 .jumbotron {
   background-color:#e1e8f0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.navbar{
+  border-bottom: 1px solid #1560bd!important;
+}
 
 .custom-toggler.navbar-toggler {
     border-color: #1560bd;
@@ -41,7 +43,6 @@ a, a:visited,a:hover{
 }
 
 
-
 .border-bottom-3px {
     border-bottom: 3px solid;
 }
@@ -50,12 +51,15 @@ a, a:visited,a:hover{
     content: none;
 }
 
+
+
 .fa {
   padding: 10px;
   margin:2px 1px;
   width: 50px;
   text-align: center;
   border-radius:5px;
+  color:white;
 }
 
 .fa:hover {

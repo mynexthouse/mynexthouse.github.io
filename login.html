@@ -11,20 +11,27 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
-    <title>Login</title>
+    <title>My Next House</title>
   </head>
-  <body class="bg-light">
+  <body>
     <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg ">
-            <a id='logo'class="navbar-brand" href="index.html">
-              <img src="./images/mnh_logo.png" width="100" height="100" alt="My Next House Logo">
-            </a>
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg mb-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/mnh_logo.png" width="100" height="100" alt="My Next House Logo">
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#menu"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon">
           </span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -44,13 +51,14 @@
             <li class="nav-item active">
               <a class="nav-link" href="profile_rentout.html" >Profile <span class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="search1.html" >Search Results <span class="sr-only">(current)</span></a>
+            </li>
           </ul>
           <ul class="nav navbar-nav ml-auto">
-
-
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fas fa-user" style="color: #1560bd;"></span> Sign Up</a>
-              <div class="dropdown-menu dropdown-menu-right text-center"  style="min-width: 20rem;"width="200px">
+              <div class="dropdown-menu dropdown-menu-right text-center"  style="min-width:20rem;">
                 <form class="px-4 py-3">
                   <div class="form-group">
                     <label for="signup-email">Email address</label>
@@ -67,12 +75,11 @@
                     </label>
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Sign up</button>
+                    <button type="submit" class="btn">Sign up</button>
                   </div>
                 </form>
               </div>
             </li>
-
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="fas fa-sign-in-alt" style="color: #1560bd;"></span> Login</a>
@@ -93,7 +100,7 @@
                     </label>
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn">Login</button>
                   </div>
                 </form>
                 <div class="dropdown-divider"></div>
@@ -103,30 +110,30 @@
           </ul>
         </div>
       </nav>
-      <div class="row justify-content-center">
-        <div class="col-3 text-center">
-          <form class="form-signin">
-          <img class="mb-2" src="./images/mnh_logo.png" alt="" width="100" height="100">
-          <h1 class="h3 mb-3 font-weight-normal">Please login</h1>
-          <label for="login-email" class="sr-only">Email address</label>
-          <input type="email" id="login-email" class="form-control mb-2" placeholder="Email address" required="" autofocus="">
-          <label for="login-password" class="sr-only">Password</label>
-          <input type="password" id="login-password" class="form-control  mb-3" placeholder="Password" required="">
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" class="form-check-input" id="login-rememberme">
-              <label class="form-check-label" for="login-rememberme">
-                Remember me
-            </label>
-          </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-          <p class="mt-5 mb-3 text-muted">My Next House © 2019</p>
-        </form>
-        </div>
-
-      </div>
-
     </div>
+    <div class="container-fluid px-5">
+      <div class="jumbotron text-center">
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-sm-12">
+            <img class="mb-2" src="./images/mnh_logo.png" alt="My Next House Logo" width="100" height="100">
+            <h1 class="h3 mb-3 font-weight-normal">Please login</h1>
+            <label for="login-email" class="sr-only">Email address</label>
+            <input type="email" id="login-email" class="form-control mb-2" placeholder="Email address" required="" autofocus="">
+            <label for="login-password" class="sr-only">Password</label>
+            <input type="password" id="login-password" class="form-control  mb-3" placeholder="Password" required="">
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" class="form-check-input" id="login-rememberme">
+                <label class="form-check-label" for="login-rememberme">
+                  Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
